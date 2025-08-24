@@ -14,7 +14,7 @@
         }
 
         body {
-            background-color: #0e0e0e;
+            background-color: #111184; /* Fundo principal em azul escuro */
             color: #fff;
             line-height: 1.6;
         }
@@ -53,14 +53,15 @@
         }
 
         .hero {
-            background: url('https://images.unsplash.com/photo-1557682250-56a3b9dcd0f2?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+            background: rgba(0,0,0,0.4) url('https://images.unsplash.com/photo-1557682250-56a3b9dcd0f2?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+            background-blend-mode: multiply;
             height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             color: #00ff99;
-            text-shadow: 0 0 10px #00ff99;
+            text-shadow: 0 0 15px #00ff99;
         }
 
         .hero h2 {
@@ -87,15 +88,15 @@
             background-color: #128c7e;
         }
 
-        .features {
+        .features, .services {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 40px;
         }
 
-        .feature {
-            background-color: #111;
+        .feature, .service {
+            background-color: #1a1a8c; /* Azul ainda mais escuro para contraste */
             border: 2px solid #00ff99;
             border-radius: 15px;
             padding: 20px;
@@ -103,18 +104,18 @@
             transition: 0.3s;
         }
 
-        .feature:hover {
+        .feature:hover, .service:hover {
             transform: translateY(-10px);
             box-shadow: 0 0 20px #00ff99;
         }
 
-        .feature h3 {
+        .feature h3, .service h3 {
             color: #00ff99;
             margin-bottom: 10px;
         }
 
         footer {
-            background-color: #111;
+            background-color: #0d0d66; /* Azul escuro no rodapé */
             padding: 40px 20px;
             text-align: center;
             border-top: 2px solid #00ff99;
@@ -132,42 +133,73 @@
         <nav>
             <a href="#sobre">Sobre</a>
             <a href="#funcionalidades">Funcionalidades</a>
+            <a href="#servicos">Serviços</a>
             <a href="#contato">Contato</a>
         </nav>
     </header>
 
     <section class="hero">
-        <h2>Automatize seu WhatsApp</h2>
-        <p>Agendamentos, dúvidas e instruções com tecnologia de ponta.</p>
+        <h2>Mais alunos para sua academia</h2>
+        <p>Um chatbot que luta por você 24h no WhatsApp.</p>
         <a href="https://wa.me/5511999999999" target="_blank" class="btn-whatsapp">Conversar no WhatsApp</a>
     </section>
 
     <section id="sobre">
         <h2>Sobre o FightBot</h2>
-        <p>O FightBot é um chatbot inovador que integra seu WhatsApp com automações inteligentes, tornando sua comunicação mais rápida, eficiente e moderna.</p>
+        <p>Somos dois jovens de 16 anos, praticantes de artes marciais e programadores, que criaram o FightBot: um chatbot para WhatsApp que automatiza o atendimento de academias, marca aulas experimentais e responde dúvidas em tempo real.</p>
     </section>
 
     <section id="funcionalidades">
         <h2>Funcionalidades</h2>
         <div class="features">
             <div class="feature">
-                <h3>Agendamentos Automáticos</h3>
-                <p>Marque e gerencie compromissos automaticamente pelo WhatsApp.</p>
+                <h3>Agendamento Automático</h3>
+                <p>Marque aulas experimentais sem esforço, direto no WhatsApp.</p>
             </div>
             <div class="feature">
-                <h3>Respostas Inteligentes</h3>
-                <p>Responda dúvidas frequentes instantaneamente com tecnologia de IA.</p>
+                <h3>Respostas Instantâneas</h3>
+                <p>O cliente nunca fica esperando: dúvidas respondidas em segundos.</p>
             </div>
             <div class="feature">
                 <h3>Instruções Personalizadas</h3>
-                <p>Forneça instruções detalhadas aos seus clientes sem precisar digitar cada mensagem.</p>
+                <p>Explique horários, regras e informações da academia de forma clara.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="services">
+            <div class="service">
+                <h3>1. Agendamento Inteligente</h3>
+                <p>Gerencie horários, remarcações e cancelamentos automaticamente.</p>
+            </div>
+            <div class="service">
+                <h3>2. Gestão de Leads</h3>
+                <p>Capture contatos de novos alunos e envie lembretes automáticos.</p>
+            </div>
+            <div class="service">
+                <h3>3. Pagamentos Automatizados</h3>
+                <p>Integração com Pix e plataformas de pagamento direto no WhatsApp.</p>
+            </div>
+            <div class="service">
+                <h3>4. Suporte 24h</h3>
+                <p>FAQ personalizado: preços, planos, localização e muito mais.</p>
+            </div>
+            <div class="service">
+                <h3>5. Marketing Automático</h3>
+                <p>Envie promoções, mensagens de boas-vindas e lembretes para alunos.</p>
+            </div>
+            <div class="service">
+                <h3>6. Relatórios e Métricas</h3>
+                <p>Acompanhe atendimentos, agendamentos e novos alunos em relatórios.</p>
             </div>
         </div>
     </section>
 
     <section id="contato">
         <h2>Contato</h2>
-        <p>Entre em contato diretamente pelo WhatsApp para começar a automatizar suas conversas.</p>
+        <p>Converse conosco no WhatsApp e veja como o FightBot pode transformar sua academia.</p>
         <a href="https://wa.me/5511999999999" target="_blank" class="btn-whatsapp">Conversar no WhatsApp</a>
     </section>
 
